@@ -38,6 +38,29 @@
 	for(var i = 0; i < array2.length; i++) {
 		console.log(array2[i]);
 	}
+	
+	console.log("***");
+	var array = [273, "Hello", true, sum(5, 4), [111,222], function(){return 3+4;}];
+	console.log(array);
+	console.log(array[4]);
+	console.log(array[4][0]);
+	console.log(array[4][1]);
+	console.log(array[5]);
+	console.log(array[5]());
+		
+	function sum(a, b) {
+		return a+b;
+	}
+	
+	console.log("***");
+	var intArray = [];
+	intArray.push(3);
+	console.log(intArray);
+	intArray.push(333);
+	console.log(intArray);
+	
+	intArray.pop();
+	console.log(intArray);
 </script>
 
 </html>

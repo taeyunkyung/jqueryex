@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<h1>javascript</h1>
+</body>
+
+<script type="text/javascript">
+	var personList = [];
+	
+	var person01 = {
+		name: "정우성",
+		hp: "010-1111-1111",
+		company: "02-1111-1111"
+	};
+	
+ 	var person02 = {}
+ 	person02.name = "유재석";
+ 	person02.hp = "010-2222-2222";
+ 	person02.company = "02-2222-2222";
+	
+	var person03 = {
+		name: "이효리",
+		hp: "010-3333-3333"
+	};
+	person03.company = "02-3333-3333";
+	
+	personList.push(person01);
+	personList.push(person02);
+	personList.push(person03);
+	console.log(personList);
+	
+	for(var i=0; i<personList.length; i++) {
+		console.log(personList[i].name);
+	}
+</script>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<h1>javascript</h1>
+</body>
+
+<script type="text/javascript">
+	var guestbookVo = {
+		no: 1,
+		name: "경태윤",
+		password: "1234",
+		content: "첫 방문입니다.",
+		showInfo: function() {
+			return 3+4;
+		}
+	};
+	
+	console.log(guestbookVo);
+	console.log(guestbookVo.name);
+	console.log(guestbookVo.showInfo());
+	
+	guestbookVo.regDate = "2022-01-27";
+	console.log(guestbookVo);
+	
+	var personVo = {}
+	console.log(personVo);
+	
+	personVo.no = 1;
+	personVo.name = "유재석";
+	personVo.hp = "010-1111-1111";
+	personVo.company = "02-1111-1111";
+	
+	console.log(personVo);
+	console.log(personVo.name);
+	console.log(personVo["name"]);
+</script>
+</html>
