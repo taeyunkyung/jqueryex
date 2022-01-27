@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<script type="text/javascript" src="/jqueryex/jquery/jquery-1.12.4.js"></script>
+<title>Insert title here</title>
+</head>
+<body>	
+	<ul>
+		<li id="first" class="red">첫번째 아이템입니다.</li>
+		<li id="second" class="blue"><strong>두번째 아이템입니다.</strong></li>
+		<li id="third" class="del">세번째아이템입니다.</li>
+		<li><strong>네번째 아이템입니다.</strong></li>
+		
+	</ul>
+	<button id="btn" type="button">li_add</button>
+</body>
+
+<script type="text/javascript">		
+	$("ul").on("click", "li", function() {
+		var $this = $(this);		
+		console.log($this.text());
+		$this.text("경태윤");
+	});
+
+	/*$("li").on("click", function() {
+		var tag = $(this);
+		tag.text();
+		console.log(tag.text());
+	});*/
+
+	$("#btn").on("click", function() {
+		$("ul").append("<li id='5'>다섯번째 아이템입니다.</li>");
+		$("ul").append("<li id='6'>여섯번째 아이템입니다.</li>");
+		$("ul").append("<li id='7'>일곱번째 아이템입니다.</li>");
+	});
+</script>
+
+</html>
